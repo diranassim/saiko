@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SAIKO - Japanese countryside × minimal streetwear. Une marque qui se comprend, se ressent et se porte pour ce qu'elle raconte.">
+    
+    <title>SAIKO — Streetwear</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__inner">
+            <nav class="header__nav">
+                <a href="shop.html" class="header__nav-link">Shop</a>
+                <a href="lookbook.html" class="header__nav-link">Lookbook</a>
+            </nav>
+            
+            <a href="index.html" class="header__logo">
+                <span class="header__logo-text">SAIKO</span>
+            </a>
+            
+            <div class="header__actions">
+                <a href="contact.html" class="header__nav-link">Contact</a>
+                <button class="header__cart" data-open-cart>
+                    <span>Panier</span>
+                    <span class="header__cart-count" style="display: none;">0</span>
+                </button>
+            </div>
+            
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <a href="shop.html" class="mobile-nav__link">Shop</a>
+        <a href="lookbook.html" class="mobile-nav__link">Lookbook</a>
+        <a href="contact.html" class="mobile-nav__link">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__background">
+                <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=1920&q=80" alt="Japanese countryside - rice terraces">
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="hero__content">
+                <h1 class="hero__title">Entre silence et mouvement</h1>
+                <p class="hero__subtitle">Drop Automne 2026 — Disponible maintenant</p>
+                <a href="shop.html" class="btn btn--large">Découvrir</a>
+            </div>
+        </section>
+        
+        <!-- Drop Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__label">Nouvelle collection</span>
+                    <h2 class="section-header__title">田舎 — Inaka</h2>
+                </div>
+                
+                <div class="editorial">
+                    <div class="editorial__image">
+                        <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=800&q=80" alt="Japanese forest atmosphere">
+                    </div>
+                    <div class="editorial__content">
+                        <h3 class="editorial__title">Là où le temps s'arrête</h3>
+                        <p class="editorial__text">
+                            Des pièces pensées pour ceux qui cherchent l'essentiel. 
+                            Inspirées par les rizières en terrasses, les forêts de mousse 
+                            et le silence des campagnes japonaises.
+                        </p>
+                        <p class="editorial__text">
+                            Chaque vêtement raconte une histoire. 
+                            Celle d'un équilibre entre tradition et urbanité.
+                        </p>
+                        <a href="shop.html" class="btn btn--outline">Explorer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Products -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-header__label">Sélection</span>
+                    <h2 class="section-header__title">Pièces essentielles</h2>
+                </div>
+                
+                <div class="products-grid products-grid--featured">
+                    <a href="product.html?id=1" class="product-card">
+                        <div class="product-card__image">
+                            <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=600&q=80" alt="Tanada Hoodie">
+                        </div>
+                        <h3 class="product-card__name">Tanada Hoodie</h3>
+                        <p class="product-card__price">145 €</p>
+                    </a>
+                    
+                    <a href="product.html?id=2" class="product-card">
+                        <div class="product-card__image">
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80" alt="Kiri Tee">
+                        </div>
+                        <h3 class="product-card__name">Kiri Tee</h3>
+                        <p class="product-card__price">65 €</p>
+                    </a>
+                    
+                    <a href="product.html?id=3" class="product-card">
+                        <div class="product-card__image">
+                            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&q=80" alt="Mori Pants">
+                        </div>
+                        <h3 class="product-card__name">Mori Pants</h3>
+                        <p class="product-card__price">120 €</p>
+                    </a>
+                    
+                    <a href="product.html?id=4" class="product-card">
+                        <div class="product-card__image">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&q=80" alt="Yama Jacket">
+                        </div>
+                        <h3 class="product-card__name">Yama Jacket</h3>
+                        <p class="product-card__price">195 €</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Philosophy Section -->
+        <section class="section" style="background-color: var(--color-hover);">
+            <div class="container">
+                <div class="editorial" style="grid-template-columns: 1fr 1fr;">
+                    <div class="editorial__content" style="padding: var(--space-xl);">
+                        <span class="text-uppercase text-secondary" style="display: block; margin-bottom: var(--space-md);">Notre vision</span>
+                        <h2 class="editorial__title" style="font-size: 2rem; margin-bottom: var(--space-lg);">
+                            Saiko n'est pas une marque qui fait du bruit
+                        </h2>
+                        <p class="editorial__text">
+                            C'est une marque qui se comprend, se ressent et se porte 
+                            pour ce qu'elle raconte.
+                        </p>
+                        <a href="lookbook.html" class="btn" style="margin-top: var(--space-md);">Voir le lookbook</a>
+                    </div>
+                    <div class="editorial__image">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80" alt="Cherry blossoms Japan">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <span class="footer__logo">SAIKO</span>
+                    <p class="footer__tagline">Japanese countryside × minimal streetwear</p>
+                </div>
+                
+                <nav class="footer__links">
+                    <a href="shop.html" class="footer__link">Shop</a>
+                    <a href="lookbook.html" class="footer__link">Lookbook</a>
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </nav>
+                
+                <div class="footer__contact">
+                    <span class="footer__contact-label">Support</span>
+                    <a href="mailto:contact@saiko.com" class="footer__contact-link">contact@saiko.com</a>
+                    <a href="https://instagram.com/saiko" class="footer__contact-link" target="_blank">@saiko</a>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 SAIKO. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cart Drawer Overlay -->
+    <div class="cart-drawer__overlay"></div>
+    
+    <!-- Cart Drawer -->
+    <div class="cart-drawer">
+        <div class="cart-drawer__header">
+            <span class="cart-drawer__title">Panier</span>
+            <button class="cart-drawer__close" aria-label="Fermer">&times;</button>
+        </div>
+        <div class="cart-drawer__items">
+            <div class="cart-drawer__empty">
+                <p class="cart-drawer__empty-text">Votre panier est vide</p>
+                <a href="shop.html" class="btn btn--small">Découvrir la collection</a>
+            </div>
+        </div>
+        <div class="cart-drawer__footer" style="display: none;">
+            <div class="cart-drawer__total">
+                <span>Total</span>
+                <span class="cart-drawer__total-value">0 €</span>
+            </div>
+            <div class="cart-drawer__buttons">
+                <a href="cart.html" class="btn btn--outline">Voir le panier</a>
+                <a href="#" class="btn">Paiement</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/main-shopify.js"></script>
+</body>
+</html>

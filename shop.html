@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SAIKO Shop - Collection streetwear inspirée de la campagne japonaise.">
+    
+    <title>Shop — SAIKO</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        .shop-hero {
+            padding-top: calc(var(--header-height) + var(--space-xl));
+            padding-bottom: var(--space-lg);
+            text-align: center;
+        }
+        
+        .shop-hero__title {
+            margin-bottom: var(--space-sm);
+        }
+        
+        .shop-hero__subtitle {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+        }
+        
+        .shop-grid {
+            padding-bottom: var(--space-xl);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__inner">
+            <nav class="header__nav">
+                <a href="shop.html" class="header__nav-link">Shop</a>
+                <a href="lookbook.html" class="header__nav-link">Lookbook</a>
+            </nav>
+            
+            <a href="index.html" class="header__logo">
+                <span class="header__logo-text">SAIKO</span>
+            </a>
+            
+            <div class="header__actions">
+                <a href="contact.html" class="header__nav-link">Contact</a>
+                <button class="header__cart" data-open-cart>
+                    <span>Panier</span>
+                    <span class="header__cart-count" style="display: none;">0</span>
+                </button>
+            </div>
+            
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <a href="shop.html" class="mobile-nav__link">Shop</a>
+        <a href="lookbook.html" class="mobile-nav__link">Lookbook</a>
+        <a href="contact.html" class="mobile-nav__link">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        
+        <!-- Shop Header -->
+        <section class="shop-hero">
+            <div class="container">
+                <h1 class="shop-hero__title">Collection</h1>
+                <p class="shop-hero__subtitle">Inaka — Automne 2026</p>
+            </div>
+        </section>
+        
+        <!-- Products Grid -->
+        <section class="shop-grid">
+            <div class="container">
+                <div class="products-grid">
+                    
+                    <a href="product.html?id=1" class="product-card">
+                        <div class="product-card__image">
+                            <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=600&q=80" alt="Tanada Hoodie">
+                        </div>
+                        <h3 class="product-card__name">Tanada Hoodie</h3>
+                        <p class="product-card__price">145 €</p>
+                    </a>
+                    
+                    <a href="product.html?id=2" class="product-card">
+                        <div class="product-card__image">
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=80" alt="Kiri Tee">
+                        </div>
+                        <h3 class="product-card__name">Kiri Tee</h3>
+                        <p class="product-card__price">65 €</p>
+                    </a>
+                    
+                    <a href="product.html?id=3" class="product-card">
+                        <div class="product-card__image">
+                            <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&q=80" alt="Mori Pants">
+                        </div>
+                        <h3 class="product-card__name">Mori Pants</h3>
+                        <p class="product-card__price">120 €</p>
+                    </a>
+                    
+                    <a href="product.html?id=4" class="product-card">
+                        <div class="product-card__image">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&q=80" alt="Yama Jacket">
+                        </div>
+                        <h3 class="product-card__name">Yama Jacket</h3>
+                        <p class="product-card__price">195 €</p>
+                    </a>
+                    
+                    <a href="product.html?id=5" class="product-card">
+                        <div class="product-card__image">
+                            <img src="https://images.unsplash.com/photo-1578932750294-f5075e85f44a?w=600&q=80" alt="Kawa Longsleeve">
+                        </div>
+                        <h3 class="product-card__name">Kawa Longsleeve</h3>
+                        <p class="product-card__price">85 €</p>
+                    </a>
+                    
+                    <a href="product.html?id=6" class="product-card">
+                        <div class="product-card__image">
+                            <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=600&q=80" alt="Sora Cap">
+                        </div>
+                        <h3 class="product-card__name">Sora Cap</h3>
+                        <p class="product-card__price">45 €</p>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <span class="footer__logo">SAIKO</span>
+                    <p class="footer__tagline">Japanese countryside × minimal streetwear</p>
+                </div>
+                
+                <nav class="footer__links">
+                    <a href="shop.html" class="footer__link">Shop</a>
+                    <a href="lookbook.html" class="footer__link">Lookbook</a>
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </nav>
+                
+                <div class="footer__contact">
+                    <span class="footer__contact-label">Support</span>
+                    <a href="mailto:contact@saiko.com" class="footer__contact-link">contact@saiko.com</a>
+                    <a href="https://instagram.com/saiko" class="footer__contact-link" target="_blank">@saiko</a>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 SAIKO. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cart Drawer Overlay -->
+    <div class="cart-drawer__overlay"></div>
+    
+    <!-- Cart Drawer -->
+    <div class="cart-drawer">
+        <div class="cart-drawer__header">
+            <span class="cart-drawer__title">Panier</span>
+            <button class="cart-drawer__close" aria-label="Fermer">&times;</button>
+        </div>
+        <div class="cart-drawer__items">
+            <div class="cart-drawer__empty">
+                <p class="cart-drawer__empty-text">Votre panier est vide</p>
+                <a href="shop.html" class="btn btn--small">Découvrir la collection</a>
+            </div>
+        </div>
+        <div class="cart-drawer__footer" style="display: none;">
+            <div class="cart-drawer__total">
+                <span>Total</span>
+                <span class="cart-drawer__total-value">0 €</span>
+            </div>
+            <div class="cart-drawer__buttons">
+                <a href="cart.html" class="btn btn--outline">Voir le panier</a>
+                <a href="#" class="btn">Paiement</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/main-shopify.js"></script>
+</body>
+</html>

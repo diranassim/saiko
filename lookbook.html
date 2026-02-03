@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SAIKO Lookbook - Japanese countryside × minimal streetwear">
+    
+    <title>Lookbook — SAIKO</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <style>
+        .lookbook-hero {
+            padding-top: calc(var(--header-height) + var(--space-xl));
+            padding-bottom: var(--space-lg);
+            text-align: center;
+        }
+        
+        .lookbook-hero__title {
+            margin-bottom: var(--space-sm);
+        }
+        
+        .lookbook-hero__subtitle {
+            color: var(--color-text-secondary);
+            font-size: 1rem;
+            font-style: italic;
+        }
+        
+        .lookbook-section {
+            padding: var(--space-sm) 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__inner">
+            <nav class="header__nav">
+                <a href="shop.html" class="header__nav-link">Shop</a>
+                <a href="lookbook.html" class="header__nav-link">Lookbook</a>
+            </nav>
+            
+            <a href="index.html" class="header__logo">
+                <span class="header__logo-text">SAIKO</span>
+            </a>
+            
+            <div class="header__actions">
+                <a href="contact.html" class="header__nav-link">Contact</a>
+                <button class="header__cart" data-open-cart>
+                    <span>Panier</span>
+                    <span class="header__cart-count" style="display: none;">0</span>
+                </button>
+            </div>
+            
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <a href="shop.html" class="mobile-nav__link">Shop</a>
+        <a href="lookbook.html" class="mobile-nav__link">Lookbook</a>
+        <a href="contact.html" class="mobile-nav__link">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content">
+        
+        <!-- Lookbook Header -->
+        <section class="lookbook-hero">
+            <div class="container">
+                <h1 class="lookbook-hero__title">Lookbook</h1>
+                <p class="lookbook-hero__subtitle">Inaka Collection — Automne 2026</p>
+            </div>
+        </section>
+        
+        <!-- Lookbook Gallery -->
+        <section class="lookbook-section">
+            <div class="container">
+                <div class="lookbook-grid">
+                    
+                    <!-- Row 1 -->
+                    <div class="lookbook-item lookbook-item--large">
+                        <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?w=1400&q=80" alt="Japanese rice terraces">
+                    </div>
+                    <div class="lookbook-item lookbook-item--small">
+                        <img src="https://images.unsplash.com/photo-1490806843957-31f4c9a91c65?w=600&q=80" alt="Mount Fuji at dusk">
+                    </div>
+                    
+                    <!-- Caption -->
+                    <div class="lookbook-caption">
+                        <p class="lookbook-caption__text">"Là où le temps suspend son vol"</p>
+                    </div>
+                    
+                    <!-- Row 2 -->
+                    <div class="lookbook-item lookbook-item--medium">
+                        <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=800&q=80" alt="Mossy forest">
+                    </div>
+                    <div class="lookbook-item lookbook-item--medium">
+                        <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=800&q=80" alt="Cherry blossoms">
+                    </div>
+                    
+                    <!-- Row 3 - Full width -->
+                    <div class="lookbook-item lookbook-item--full">
+                        <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?w=1600&q=80" alt="Japanese countryside panorama">
+                    </div>
+                    
+                    <!-- Caption -->
+                    <div class="lookbook-caption">
+                        <p class="lookbook-caption__text">"Entre brume et silence"</p>
+                    </div>
+                    
+                    <!-- Row 4 -->
+                    <div class="lookbook-item lookbook-item--small">
+                        <img src="https://images.unsplash.com/photo-1478436127897-769e1b3f0f36?w=600&q=80" alt="Traditional Japanese elements">
+                    </div>
+                    <div class="lookbook-item lookbook-item--large">
+                        <img src="https://images.unsplash.com/photo-1542640244-7e672d6cef4e?w=1400&q=80" alt="Bamboo forest">
+                    </div>
+                    
+                    <!-- Row 5 -->
+                    <div class="lookbook-item lookbook-item--medium">
+                        <img src="https://images.unsplash.com/photo-1522623349500-de37a56ea2a5?w=800&q=80" alt="Japanese aesthetic">
+                    </div>
+                    <div class="lookbook-item lookbook-item--medium">
+                        <img src="https://images.unsplash.com/photo-1480796927426-f609979314bd?w=800&q=80" alt="Tokyo streets">
+                    </div>
+                    
+                    <!-- Final Caption -->
+                    <div class="lookbook-caption">
+                        <p class="lookbook-caption__text">"田舎 — Inaka"</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="section" style="text-align: center;">
+            <div class="container">
+                <a href="shop.html" class="btn btn--large">Découvrir la collection</a>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <span class="footer__logo">SAIKO</span>
+                    <p class="footer__tagline">Japanese countryside × minimal streetwear</p>
+                </div>
+                
+                <nav class="footer__links">
+                    <a href="shop.html" class="footer__link">Shop</a>
+                    <a href="lookbook.html" class="footer__link">Lookbook</a>
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </nav>
+                
+                <div class="footer__contact">
+                    <span class="footer__contact-label">Support</span>
+                    <a href="mailto:contact@saiko.com" class="footer__contact-link">contact@saiko.com</a>
+                    <a href="https://instagram.com/saiko" class="footer__contact-link" target="_blank">@saiko</a>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 SAIKO. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cart Drawer Overlay -->
+    <div class="cart-drawer__overlay"></div>
+    
+    <!-- Cart Drawer -->
+    <div class="cart-drawer">
+        <div class="cart-drawer__header">
+            <span class="cart-drawer__title">Panier</span>
+            <button class="cart-drawer__close" aria-label="Fermer">&times;</button>
+        </div>
+        <div class="cart-drawer__items">
+            <div class="cart-drawer__empty">
+                <p class="cart-drawer__empty-text">Votre panier est vide</p>
+                <a href="shop.html" class="btn btn--small">Découvrir la collection</a>
+            </div>
+        </div>
+        <div class="cart-drawer__footer" style="display: none;">
+            <div class="cart-drawer__total">
+                <span>Total</span>
+                <span class="cart-drawer__total-value">0 €</span>
+            </div>
+            <div class="cart-drawer__buttons">
+                <a href="cart.html" class="btn btn--outline">Voir le panier</a>
+                <a href="#" class="btn">Paiement</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/main-shopify.js"></script>
+</body>
+</html>

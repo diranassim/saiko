@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SAIKO - Votre panier">
+    
+    <title>Panier — SAIKO</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__inner">
+            <nav class="header__nav">
+                <a href="shop.html" class="header__nav-link">Shop</a>
+                <a href="lookbook.html" class="header__nav-link">Lookbook</a>
+            </nav>
+            
+            <a href="index.html" class="header__logo">
+                <span class="header__logo-text">SAIKO</span>
+            </a>
+            
+            <div class="header__actions">
+                <a href="contact.html" class="header__nav-link">Contact</a>
+                <button class="header__cart" data-open-cart>
+                    <span>Panier</span>
+                    <span class="header__cart-count" style="display: none;">0</span>
+                </button>
+            </div>
+            
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Navigation -->
+    <nav class="mobile-nav">
+        <a href="shop.html" class="mobile-nav__link">Shop</a>
+        <a href="lookbook.html" class="mobile-nav__link">Lookbook</a>
+        <a href="contact.html" class="mobile-nav__link">Contact</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-content cart-page">
+        <div class="container">
+            <div class="section-header" style="margin-bottom: var(--space-lg);">
+                <h1 class="section-header__title">Panier</h1>
+            </div>
+            
+            <div class="cart-layout">
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <!-- Items will be rendered by JavaScript -->
+                    <!-- Example static item for reference -->
+                    <!--
+                    <div class="cart-item" data-item-id="tanada-hoodie-01" data-item-size="M">
+                        <div class="cart-item__image">
+                            <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=200&q=80" alt="Tanada Hoodie">
+                        </div>
+                        <div class="cart-item__info">
+                            <h3 class="cart-item__name">Tanada Hoodie</h3>
+                            <p class="cart-item__variant">Taille: M</p>
+                            <p class="cart-item__price">145 €</p>
+                        </div>
+                        <div class="cart-item__actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-selector__btn quantity-decrease">−</button>
+                                <span class="quantity-selector__value">1</span>
+                                <button class="quantity-selector__btn quantity-increase">+</button>
+                            </div>
+                            <button class="cart-item__remove">Supprimer</button>
+                        </div>
+                    </div>
+                    -->
+                </div>
+                
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <h3 class="cart-summary__title">Récapitulatif</h3>
+                    
+                    <div class="cart-summary__row">
+                        <span>Sous-total</span>
+                        <span class="cart-summary__subtotal-value">0 €</span>
+                    </div>
+                    
+                    <div class="cart-summary__row">
+                        <span>Livraison</span>
+                        <span>Calculée à l'étape suivante</span>
+                    </div>
+                    
+                    <div class="cart-summary__total">
+                        <span>Total</span>
+                        <span class="cart-summary__total-value">0 €</span>
+                    </div>
+                    
+                    <button class="btn cart-summary__checkout">Passer au paiement</button>
+                    
+                    <p style="text-align: center; margin-top: var(--space-md); font-size: 0.8rem; color: var(--color-text-secondary);">
+                        Livraison offerte à partir de 150 €
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Continue Shopping -->
+            <div style="text-align: center; margin-top: var(--space-xl);">
+                <a href="shop.html" class="btn btn--outline">Continuer mes achats</a>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__brand">
+                    <span class="footer__logo">SAIKO</span>
+                    <p class="footer__tagline">Japanese countryside × minimal streetwear</p>
+                </div>
+                
+                <nav class="footer__links">
+                    <a href="shop.html" class="footer__link">Shop</a>
+                    <a href="lookbook.html" class="footer__link">Lookbook</a>
+                    <a href="contact.html" class="footer__link">Contact</a>
+                </nav>
+                
+                <div class="footer__contact">
+                    <span class="footer__contact-label">Support</span>
+                    <a href="mailto:contact@saiko.com" class="footer__contact-link">contact@saiko.com</a>
+                    <a href="https://instagram.com/saiko" class="footer__contact-link" target="_blank">@saiko</a>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 SAIKO. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Cart Drawer Overlay -->
+    <div class="cart-drawer__overlay"></div>
+    
+    <!-- Cart Drawer -->
+    <div class="cart-drawer">
+        <div class="cart-drawer__header">
+            <span class="cart-drawer__title">Panier</span>
+            <button class="cart-drawer__close" aria-label="Fermer">&times;</button>
+        </div>
+        <div class="cart-drawer__items">
+            <div class="cart-drawer__empty">
+                <p class="cart-drawer__empty-text">Votre panier est vide</p>
+                <a href="shop.html" class="btn btn--small">Découvrir la collection</a>
+            </div>
+        </div>
+        <div class="cart-drawer__footer" style="display: none;">
+            <div class="cart-drawer__total">
+                <span>Total</span>
+                <span class="cart-drawer__total-value">0 €</span>
+            </div>
+            <div class="cart-drawer__buttons">
+                <a href="cart.html" class="btn btn--outline">Voir le panier</a>
+                <a href="#" class="btn">Paiement</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/main-shopify.js"></script>
+</body>
+</html>
